@@ -25,6 +25,7 @@ public:
 		
 		// there is capacity, enqueue
 		r = (r+1)%cap; 
+		cout<<"r is "<<r<<endl;
 		arr[r]=data;
 		currentSize++;
 	}
@@ -36,6 +37,7 @@ public:
 		
 		// not empty, dequeue
 		f = (f+1)%cap;
+		cout<<"f is "<<f<<endl;
 		currentSize--;
 	}
 	char front(){
